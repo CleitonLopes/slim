@@ -1,0 +1,52 @@
+Slim
+****
+
+Um micro Framework para trabalhar com projetos feitos em php
+
+Initial
+*******
+
+composer require slim/slim
+
+Estrutura criada na aula
+------------------------
+
+- public/index.php
+
+-- index.php é baseada no pattern Front Controller, aqui onde fica
+-- a entrada e saida de dados que o usuario tem acesso
+
+- bootstrap.php
+
+-- Index inicial da aplicação
+
+-----------------------------------------------------------------------------
+
+Complementos adicionais
+***********************
+
+- require slim/php-view monolog/monolog
+
+- php-view é uma camada de renderização
+- monolog é uma pacote para trabalhar com logs
+
+Usando Containers de serviço Pimple
+***********************************
+
+- Aqui é injetado serviços (pacotes) direto no dependencies onde foi injetado
+- serviço de log, e tambêm o serviço de view para renderização de pagina
+
+-------------------------------------------------------------------------------
+
+Usando estrutura Skeleton
+**************************
+
+composer create-project slim/slim-skeleton
+
+Eloquent do Slim
+*****************
+
+composer require illuminate/database
+
+
+
